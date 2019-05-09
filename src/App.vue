@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <griddle :grid-width="1000" :grid-height="1000" :grid-rows="2" :grid-cols="2"  />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Griddle from './components/Griddle.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Griddle
   }
 }
 </script>
